@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/styles.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'blog./fonts/vazir.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>{{ about_me.name }} {{ about_me.last_name }} | رزومه</title>
+    
+</head>
+<body style="background-color:#CDF0EA">
+    <div class="card">
+        <div class="card3">
+            <br>
+            <h1 class="txtT">درباره :</h1>
+            <p class="txtB">{{ about_me.biography|linebreaksbr }}</p>
+            <h1 class="txtT"> پروژه ها :</h1>
+            <div class="skill-grid">
+                {% for project in projects %}
+                    <div class="skill-item">
+                        <a class="txtT" href="{{ project.link }}">{{ project.name }}</a>
+                    </div>
+                {% endfor %}
+            </div>
+            <h1 class="txtT">زبان ها :</h1>
+            <div class="skill-grid">
+                {% for lng in lngs %}
+                    <div class="skill-item">
+                        <p class="txtS">{{ lng.language_name }}</p>
+                        <progress dir="ltr" class="progress-bar1" value="{{ lng.language_level }}" max="100"></progress>
+                    </div>
+                {% endfor %}
+            </div>
+            <h1 class="txtT">مهارت های فنی :</h1>
+            <div class="skill-grid">
+                {% for Tskill in Tskills %}
+                    <div class="skill-item">
+                        <p class="txtS">{{ Tskill.skill_name }}</p>
+                        <progress dir="ltr" class="progress-bar2" value="{{ Tskill.skill_level }}" max="100"></progress>
+                    </div>
+                {% endfor %}
+            </div>
+            <h1 class="txtT">مهارت های نرم :</h1>
+            <div class="skill-grid">
+                {% for Sskill in Sskills %}
+                    <div class="skill-item">
+                        <p class="txtS">{{ Sskill.skill_name }}</p>
+                        <progress dir="ltr" class="progress-bar3" value="{{ Sskill.skill_level }}" max="100"></progress>
+                    </div>
+                {% endfor %}
+            </div>
+            
+        </div>
+        
+        <div class="card2">
+            <div class="container">
+                {% if about_me.your_picture %}
+                    <div class="image-container">
+                        <img class="imag2" src="{{ about_me.your_picture.url }}" alt="{{ about_me.name }}">
+                    </div>
+                {% endif %}
+                <h1 id="txt">{{ about_me.name }} {{ about_me.last_name }}</h1>
+            </div>
+            <p class="txt3">تاریخ تولد :  {{ about_me.year_of_Birth }}</p>
+            <p class="txt3">ایمیل: {{ about_me.your_emile }}</p>
+            <p class="txt3">شماره تلفن: {{ about_me.your_phone_number }}</p>
+            <p class="txt3">محل سکونت : {{ about_me.your_home_address }}</p>
+        </div>
+    </div>
+</body>
+</html>

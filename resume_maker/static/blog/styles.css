@@ -1,0 +1,280 @@
+
+.card {
+  text-align: right;
+  box-shadow: 2px 2px 8px 2px #dcdada;
+  transition: 0.3s;
+  width: 70%;
+  background-color: #F9F9F9;
+  margin-left: 15%;
+  margin-top: 2%;
+  border-radius: 10px;
+  display: flex; 
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  /* flex-direction: row; */
+}
+
+.card2 {
+  text-align: center;
+  box-shadow: 2px 2px 8px 2px #dcdada;
+  transition: 0.3s;
+  background-color: #53667b;
+  border-top-left-radius: 100px;
+  width: 30%;
+  border-top-right-radius: 100px;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imag2 {
+  margin-top: 10px;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+
+html {
+  font-family: 'Vazir', Arial, sans-serif;
+  font-weight:normal;
+  font-size: 100%;
+}
+.section {
+  /* background-color: #014352; */
+  text-align: center;
+  padding: 2rem 0rem;
+  color: white;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  float: left;
+}
+
+#section2 {
+  /* background-color: #014352; */
+  text-align: center;
+  padding: .5rem 0rem;
+  background-color: #261C2C;
+  color: white;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+
+.sidebar {
+  width: 100%
+}
+
+.sidebarp {
+  width: 100%
+}
+
+
+.contact {
+  float: left;
+  width: calc(66.66% - 1rem);
+  margin-left: 1rem;
+}
+
+.clearfix:after,
+.clearfix:before {
+  content: "";
+  display: table;
+  text-align: center;
+}
+
+.clearfix:after {
+  clear: both;
+  text-align: center;
+}
+
+.txt2{
+  margin-right: 50px;
+  font-family: 'Vazir', Arial, sans-serif;
+  font-weight:normal;  
+  color: #99cff0;
+  font-size: medium;
+  direction: rtl;
+}
+.txtT{
+  margin-right: 5px;
+  font-family: 'Vazir', Arial, sans-serif;
+  font-weight:normal;  
+  color: #6b8fa6;
+  font-size: large;
+  direction: rtl;
+}
+
+.txtS{
+  font-family: 'Vazir', Arial, sans-serif;
+  font-weight:normal;  
+  color: #df4014;
+  font-size: large;
+  direction: ltr;
+}
+
+.txtB{
+  margin: 20px;
+  font-family: 'Vazir', Arial, sans-serif;
+  font-weight:normal;  
+  color: #515050;
+  font-size: large;
+  direction: rtl;
+}
+
+.txt3{
+  font-family: 'Vazir', Arial, sans-serif;
+  font-weight:normal;  
+  color: #99cff0;
+  font-size: medium;
+  direction: rtl;
+}
+
+@font-face {
+  font-family: Vazir;
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/Vazir.eot');
+  src: url('fonts/Vazir.eot?#iefix') format('embedded-opentype'), 
+  url('fonts/Vazir.woff2') format('woff2'), 
+  url('fonts/Vazir.woff') format('woff'), 
+  url('fonts/Vazir.ttf') format('truetype');
+ }
+ @font-face {
+  font-family: Vazir;
+  font-style: normal;
+  font-weight: bold;
+  src: url('fonts/Vazir-Bold.eot');
+  src: url('fonts/Vazir-Bold.eot?#iefix') format('embedded-opentype'), 
+  url('fonts/Vazir-Bold.woff2') format('woff2'), 
+  url('fonts/Vazir-Bold.woff') format('woff'), 
+  url('fonts/Vazir-Bold.ttf') format('truetype');
+ }
+#txt{
+  color: #40c2d3;
+  font-size: x-large;
+  font-family: 'Vazir', Arial, sans-serif;
+  font-weight:normal;
+}
+
+.card3 {
+  text-align: right;
+  transition: 0.3s;
+  width: 70%;
+  background-color: #F9F9F9;
+  border-radius: 10px;
+  border-top-left-radius: 100px;
+}
+
+.skill-item{
+  text-align: center;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.progress-bar1 {
+  width: 200;
+  height: 10px;
+  background-color: #9a9a9a;
+  border-radius: 10px;
+}
+
+.progress-bar1::-webkit-progress-bar {
+  background-color: #9a9a9a;
+  border-radius: 10px;
+}
+
+.progress-bar1::-webkit-progress-value {
+  background-color: #891e1e;
+  border-radius: 10px;
+}
+
+.progress-bar1::-moz-progress-bar {
+  background-color: #9a9a9a;
+  border-radius: 10px;
+}
+
+
+.progress-bar2 {
+  width: 200;
+  height: 10px;
+  background-color: #9a9a9a;
+  border-radius: 10px;
+}
+
+.progress-bar2::-webkit-progress-bar {
+  background-color: #9a9a9a;
+  border-radius: 10px;
+}
+
+.progress-bar2::-webkit-progress-value {
+  background-color: #2f377e;
+  border-radius: 10px;
+}
+
+.progress-bar2::-moz-progress-bar {
+  background-color: #9a9a9a;
+  border-radius: 10px;
+}
+
+
+.progress-bar3 {
+  width: 200;
+  height: 10px;
+  background-color: #9a9a9a;
+  border-radius: 10px;
+}
+
+.progress-bar3::-webkit-progress-bar {
+  background-color: #9a9a9a;
+  border-radius: 10px;
+}
+
+.progress-bar3::-webkit-progress-value {
+  background-color: #1c7156;
+  border-radius: 10px;
+}
+
+.progress-bar3::-moz-progress-bar {
+  background-color: #9a9a9a;
+  border-radius: 10px;
+}
+
+
+/* # */
+
+#body2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 20px;
+}
+.big-button {
+  padding: 20px 40px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 50px;
+}
+.big-button:hover {
+  transition: 0.3s;
+  background-color: #45a049;
+  border-radius: 10px;
+}
