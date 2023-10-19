@@ -14,6 +14,8 @@ Run and go to:<br>
 http://127.0.0.1:8000/<br>
 <br>
 Create your resume now :)<br>
-Photos from the site:<br>
-![](https://github.com/aliasgharfathikhah/Resume-maker/blob/main/1.png)
+### Screensho<br>
+
+![Screenshot (360)](https://github.com/aliasgharfathikhah/Resume-maker/assets/114841573/314c1069-92f6-4ccb-94c7-faa5fada6937)
+![Screenshot (361)](https://github.com/aliasgharfathikhah/Resume-maker/assets/114841573/d1900fef-bdd0-4e54-9d6a-a26eeb6ce1e1)
 
