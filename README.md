@@ -15,4 +15,5 @@ http://127.0.0.1:8000/<br>
 <br>
 Create your resume now :)<br>
 Photos from the site:<br>
+  [] (https://github.com/aliasgharfathikhah/Resume-maker/blob/main/1.png)
 
